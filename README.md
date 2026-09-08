@@ -15,16 +15,24 @@ CLI + GUI task manager with JSON storage and Kanban board.
 
 ## Installation
 
+```bash
 git clone https://github.com/yourusername/taskmanager.git
 cd taskmanager
 pip install pillow plyer  # optional
 chmod +x task_manager.py
-Usage
-GUI (default)
-bash
+```
+
+## Usage
+
+### GUI (default)
+
+```bash
 python task_manager.py        # or: python task_manager.py gui
-CLI Examples
-bash
+```
+
+### CLI Examples
+
+```bash
 # Add task
 python task_manager.py add "Finish report" -p high -c Work --due "2026-09-15 17:00"
 
@@ -42,11 +50,14 @@ python task_manager.py stats
 
 # Clear all
 python task_manager.py clear --force
-Data Storage
-tasks.json – main storage.
-tasks.json.backup – automatic backup.
-config.json – GUI settings.
+```
 
+## Data Storage
 
-# License
+- `tasks.json` – main storage.
+- `tasks.json.backup` – automatic backup.
+- `config.json` – GUI settings.
+
+## License
+
 MIT
