@@ -15,7 +15,7 @@ CLI + GUI task manager with JSON storage and Kanban board.
 
 ## Installation
 
-```bash
+
 git clone https://github.com/yourusername/taskmanager.git
 cd taskmanager
 pip install pillow plyer  # optional
