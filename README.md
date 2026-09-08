@@ -15,7 +15,6 @@ CLI + GUI task manager with JSON storage and Kanban board.
 
 ## Installation
 
-
 git clone https://github.com/yourusername/taskmanager.git
 cd taskmanager
 pip install pillow plyer  # optional
@@ -45,15 +44,9 @@ python task_manager.py stats
 python task_manager.py clear --force
 Data Storage
 tasks.json – main storage.
-
 tasks.json.backup – automatic backup.
-
 config.json – GUI settings.
 
-Troubleshooting
-Use latest version – canvas tags now prefixed with "task_" to avoid ID conflicts.
 
-Status strings are normalised (spaces → underscores) – works with "In Progress".
-
-License
+# License
 MIT
