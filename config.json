@@ -1,0 +1,17 @@
+{
+  "window_geometry": "1280x800",
+  "filters": {
+    "status": "All",
+    "priority": "All",
+    "category": "All"
+  },
+  "columns_width": {
+    "ID": 70,
+    "Title": 250,
+    "Priority": 100,
+    "Status": 120,
+    "Due Date": 150
+  },
+  "background": "mybackground.jpg",
+  "theme": "light"
+}
