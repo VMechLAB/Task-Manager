@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
-"""
-Task Manager - Full Application (Fixed)
-Combines CLI and GUI with persistent JSON storage.
-"""
-
 import json
 import os
 import sys
@@ -32,7 +27,7 @@ except ImportError:
     HAS_PLYER = False
 
 
-# ================ CORE BACKEND ================
+# CORE BACKEND
 class Priority(Enum):
     LOW = 1
     MEDIUM = 2
@@ -294,7 +289,7 @@ class TaskManager:
                 self.tasks = {}
 
 
-# ================ GUI FRONTEND ================
+# GUI FRONTEND
 class KanbanGUI:
     def __init__(self, root):
         self.root = root
@@ -834,7 +829,7 @@ class KanbanGUI:
         self.root.destroy()
 
 
-# ================ CLI FRONTEND ================
+# CLI FRONTEND
 class TaskCLI:
     def __init__(self):
         self.manager = TaskManager()
@@ -1084,7 +1079,7 @@ Examples:
             print(f"✓ All {count} tasks cleared successfully!")
 
 
-# ================ ENTRY POINT ================
+# ENTRY POINT 
 def main():
     if len(sys.argv) == 1:
         try:
